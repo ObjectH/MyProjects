@@ -55,6 +55,12 @@ def get_text_messages(message):
             div.append(new_cases)
             div.append(new_deaths)
             div.append(new_heal)
+            new_deaths = '0'
+            new_cases = '0'
+            new_heal = '0'
+            new_deaths_world = '0'
+            new_cases_world = '0'
+            new_heal_world = '0'
             stat[city] = div
         except:
             continue
@@ -85,6 +91,12 @@ def get_text_messages(message):
             div.append(new_cases_world)
             div.append(new_deaths_world)
             div.append(new_heal_world)
+            new_deaths = '0'
+            new_cases = '0'
+            new_heal = '0'
+            new_deaths_world = '0'
+            new_cases_world = '0'
+            new_heal_world = '0'
             stat[country] = div
         except:
             continue
